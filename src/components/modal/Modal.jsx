@@ -36,7 +36,6 @@ const Modal = ({ isOpen }) => {
     } catch (error) {
       console.error("Error during upload", error);
     }
-
     setIsVisible(false);
   };
 

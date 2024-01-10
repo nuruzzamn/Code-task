@@ -14,7 +14,7 @@ const userData = [
     cardDetails: [
       {
         leftProImg: photo1,
-        leftProTitle: "Client name 11",
+        leftProTitle: "Client name",
         rightProImg: photo2,
         rightProTitle: "sadik istiak",
         des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aspernatur?",
