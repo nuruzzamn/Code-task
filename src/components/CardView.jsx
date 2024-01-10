@@ -4,9 +4,17 @@ import comment from "../assets/images/comment.png";
 import notes from "../assets/images/notes.png";
 import upload from "../assets/images/upload.png";
 import TruncatedText from "./TruncatedText";
+import { useState } from "react";
+import Modal from "./modal/Modal";
 
 const CardView = ({ item }) => {
   // console.log("test", item);
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const isOpen = () => {
+    setIsOpenModal(!isOpenModal);
+  };
+
   return (
     <>
       <div className="font-bold max-w-96 px-6 py-4 bg-white">
@@ -74,11 +82,13 @@ const CardView = ({ item }) => {
               <span className="flex items-center">{item.comment}</span>
             </div>
 
+            {}
             <div className="flex justify-start items-center gap-1">
               <img
                 src={upload}
                 alt="img_comment"
-                className="h-6 w-6 rounded-full p-[5%]"
+                className="h-6 w-6 rounded-full p-[5%] cursor-pointer"
+                onClick={() => setIsOpenModal(!isOpenModal)}
               />
               <span className="flex items-center">{item.upload}</span>
             </div>
@@ -94,6 +104,12 @@ const CardView = ({ item }) => {
           </div>
         </div>
       </div>
+
+      <div className="z-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        {isOpenModal && <Modal isOpen={isOpen} />}
+      </div>
+
+      {/* {isOpenModal && <Modal closeModal={closeModal} />} */}
     </>
   );
 };

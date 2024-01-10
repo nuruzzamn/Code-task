@@ -1,10 +1,10 @@
 import photo1 from "../assets/images/photo1.png";
 import photo2 from "../assets/images/photo2.png";
-import stack from "../assets/images/stack.png";
-import calendar from "../assets/images/calendar.png";
-import comment from "../assets/images/comment.png";
-import notes from "../assets/images/notes.png";
-import upload from "../assets/images/upload.png";
+// import stack from "../assets/images/stack.png";
+// import calendar from "../assets/images/calendar.png";
+// import comment from "../assets/images/comment.png";
+// import notes from "../assets/images/notes.png";
+// import upload from "../assets/images/upload.png";
 
 const userData = [
   {

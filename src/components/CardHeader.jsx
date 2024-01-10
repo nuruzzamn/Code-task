@@ -1,5 +1,5 @@
 const CardHeader = ({ title, count, backgroundColor }) => {
-  console.log("backgroundColor", backgroundColor);
+  // console.log("backgroundColor", backgroundColor);
   // const bgcolor = "bg-red-700";
   return (
     <>
