@@ -29,12 +29,12 @@ const Modal = ({ isOpen }) => {
       });
 
       if (response.ok) {
-        alert("Upload successful");
+        console.log("Upload successful");
       } else {
-        alert("Upload failed");
+        console.error("Upload failed");
       }
     } catch (error) {
-      alert("Error during upload");
+      console.error("Error during upload", error);
     }
 
     setIsVisible(false);
